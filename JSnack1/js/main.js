@@ -12,21 +12,9 @@ let userNumberB = parseInt(prompt("inserisci un numero superiore a 50"));
 // console.log(userNumberA);
 // console.log(userNumberB);
 
-while (isNaN(userNumberA) || userNumberA <= 0 || userNumberA > 50) {
-  userNumberA = prompt("inserisci un numero da 1 a 50");
-}
-while (isNaN(userNumberB) || userNumberB <= 50) {
-  userNumberB = prompt("inserisci un numero superiore a 50");
-}
 const randomNumerInRange =
   Math.floor(Math.random() * (userNumberB - userNumberA + 1)) + userNumberA;
 console.log(randomNumerInRange);
-
-// function getRandomInt(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
 
 // console.log(userNumberA);
 // console.log(userNumberB);
